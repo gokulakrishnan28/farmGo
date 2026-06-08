@@ -1,0 +1,6 @@
+{
+  "name": "FarmGo",
+  "description": "Tamil Nadu Agri-Logistics platform with cold storage predictions and crop price feeds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

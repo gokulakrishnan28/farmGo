@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #2E7D32;
+  --color-secondary: #A5D6A7;
+  --color-accent: #F1F8E9;
+  --color-dark: #1B5E20;
+  --color-white: #FFFFFF;
+  --color-bg-light: #F9FBF9;
+}
+
+:root {
+  --primary: #2E7D32;
+  --secondary: #A5D6A7;
+  --accent: #F1F8E9;
+  --dark: #1B5E20;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F9FBF9;
+  color: #1B5E20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: #1B5E20;
+}
+
+/* Custom scrolling ticker anim */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 32s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Premium Natural Tones Components */
+.natural-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.natural-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: rgba(46, 125, 50, 0.2);
+}
+
